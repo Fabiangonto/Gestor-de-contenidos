@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Registro formulario</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+</head>
+<body>
+
+	<h1>Formulario de registro</h1>
+
+	<form method="POST" action="php/registro.php">
+	<fieldset>
+		<legend>Datos de usuario</legend>
+
+		<label>Nombre</label>
+		<input type="text" name="user" placeholder="Nombre" required><br><br>
+
+		<label>Apellido Paterno</label>
+		<input type="text" name="apePat" placeholder="Apellido paterno" required><br><br>
+
+		<label>Apellido Materno</label>
+		<input type="text" name="apeMat" placeholder="Apellido materno" required><br><br>
+
+		<label>Correo electronico</label>
+		<input type="email" name="email" placeholder="yo@ejemplo.com" required ><br><br>
+
+		<label>Clave de usuario</label>
+		<input type="password" name="pass" placeholder="Password" required><br><br>
+
+		<label>Tipo de usuario</label>
+		<input type="text" name="tipoUsuario" placeholder="Tipo usuario" required><br><br>
+
+		<input type="submit" type="Enviar">
+
+
+	</fieldset>
+	</form>
+	
+</body>
+
+</html>

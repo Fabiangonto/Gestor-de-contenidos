@@ -1,0 +1,21 @@
+/*estilos*/
+body{
+
+}
+
+form{
+	width: 300px;
+}
+
+fieldset{
+	padding:20 px;
+}
+
+label{
+padding: 20 px;
+}
+
+input{
+	margin:200 px;
+	float:right;
+}
