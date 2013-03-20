@@ -1,21 +1,97 @@
+@font-face {
+    font-family: 'FontomasCustomRegular';
+    src: url('fonts/fontomas-webfont.eot');
+    src: url('fonts/fontomas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/fontomas-webfont.woff') format('woff'),
+         url('fonts/fontomas-webfont.ttf') format('truetype'),
+         url('fonts/fontomas-webfont.svg#FontomasCustomRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+/** the magic icon trick ! **/
+[data-icon]:after {
+    content: attr(data-icon);
+    font-family: 'FontomasCustomRegular';
+    color: rgb(106, 159, 171);
+    position: absolute;
+    left: 10px;
+    top: 35px;
+    width: 30px;
+}
+
+
+
 /*estilos*/
 body{
 
 }
 
 form{
-	width: 300px;
+	width: 500px;
 }
 
 fieldset{
-	padding:20 px;
+	padding:20px;
+	border:none;
+
 }
 
 label{
+	width: 90%;
 padding: 20 px;
 }
 
-input{
-	margin:200 px;
-	float:right;
+input {
+width: 90%;
+    margin-top: 4px;
+    padding: 10px 5px 10px 32px;    
+    border: 1px solid rgb(178, 178, 178);
+    box-sizing : content-box;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    transition: all 0.2s linear;
+  	float:right;
+
+}
+
+form #login input{
+	background: black;
+}
+
+/* === Estilos del boton de Envio === */
+
+input.botoncito{
+	width: 30%;
+    cursor: pointer;    
+    background: rgb(61, 157, 179);
+    float:none;
+    padding: 8px 5px;
+    font-family: 'BebasNeueRegular','Arial Narrow',Arial,sans-serif;
+    color: #fff;
+    font-size: 24px;    
+    border: 1px solid rgb(28, 108, 122);    
+    margin-bottom: 10px;    
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 3px; 
+    box-shadow:
+        0px 1px 6px 4px rgba(0, 0, 0, 0.07) inset,
+        0px 0px 0px 3px rgb(254, 254, 254),
+        0px 5px 3px 3px rgb(210, 210, 210);
+    transition: all 0.2s linear;
+    float: right;
+}
+
+
+
+
+input.botoncito:hover{
+ opacity:.55;
+    cursor: pointer; 
+    color: #fff;
+}
+
+input.botoncito:active {
+    border: 1px solid #222;
+    box-shadow: 0 0 10px 5px #444 inset; 
 }

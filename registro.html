@@ -10,11 +10,11 @@
 	<h2>Rellena tus datos personales</h2>
 
 	<form method="POST" action="php/registro.php">
-	<fieldset>
+	<fieldset class="marcoForm">
 		<legend>Datos de usuario</legend>
 
-		<label>Nombre</label>
-		<input type="text" name="user" placeholder="Nombre" required><br><br>
+		<label for="username" data-icon="u" >Nombre</label>
+		<input id="username" type="text" name="user" placeholder="Nombre" required ><br><br>
 
 		<label>Apellido Paterno</label>
 		<input type="text" name="apePat" placeholder="Apellido paterno" required><br><br>
@@ -23,18 +23,20 @@
 		<input type="text" name="apeMat" placeholder="Apellido materno" required><br><br>
 
 		<label>Correo electronico</label>
-		<input type="email" name="email" placeholder="yo@ejemplo.com" required ><br><br>
+		<input type="email" name="email" placeholder="yo@ejemplo.com" required><br><br>
 
-		<label>Clave de usuario</label>
-		<input type="password" name="pass" placeholder="Password" required><br><br>
+		<label for="password" data-icon="p">Clave de usuario</label>
+		<input id="password" type="password" name="pass" placeholder="Password" required><br><br>
 
 		<label>Tipo de usuario</label>
 		<input type="text" name="tipoUsuario" placeholder="Tipo usuario" required><br><br>
+	</fieldset>
+	<fieldset>
 
-		<input type="submit" type="Enviar">
-
+		<input class="botoncito" type="submit" value="Enviar">
 
 	</fieldset>
+	
 	</form>
 	
 </body>
